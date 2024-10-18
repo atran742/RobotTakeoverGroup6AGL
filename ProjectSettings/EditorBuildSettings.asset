@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: b5b6f125569e64d25a77af2d0ef47b08
+  - enabled: 1
+    path: Assets/Scenes/worldLore.unity
+    guid: d779392051c1d4a5b8dba26cbcbb13a1
   m_configObjects: {}
