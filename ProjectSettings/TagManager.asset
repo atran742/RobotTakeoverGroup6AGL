@@ -47,6 +47,9 @@ TagManager:
   - name: Rugs
     uniqueID: 3321354741
     locked: 0
+  - name: Player
+    uniqueID: 1747699529
+    locked: 0
   - name: Walls
     uniqueID: 2264825555
     locked: 0
@@ -58,7 +61,4 @@ TagManager:
     locked: 0
   - name: Smaller Props
     uniqueID: 1051276833
-    locked: 0
-  - name: Player
-    uniqueID: 1747699529
     locked: 0
