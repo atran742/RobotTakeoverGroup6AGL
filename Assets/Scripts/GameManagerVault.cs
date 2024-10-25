@@ -29,6 +29,7 @@ public class GameManagerVault : MonoBehaviour
     public void PlayerReachedGoal(string endScene)
     {
         SceneManager.LoadScene(endScene);
+        points.addPoints(19042940);
 
     }
 

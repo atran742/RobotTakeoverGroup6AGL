@@ -13,6 +13,8 @@ public class Calculator : MonoBehaviour
     private string currentInput = "";
 
     public GameObject money;
+
+    public static bool key = false;
     // void Start()
     // {
     //     money.SetActive(false);
@@ -24,6 +26,7 @@ public class Calculator : MonoBehaviour
         {
             money.SetActive(true);
             //UpdateDisplay();
+            key = true;
         }
         else if (buttonValue == "Cancel")
         {
