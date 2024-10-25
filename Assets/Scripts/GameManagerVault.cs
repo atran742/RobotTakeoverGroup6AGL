@@ -29,7 +29,6 @@ public class GameManagerVault : MonoBehaviour
     public void PlayerReachedGoal(string endScene)
     {
         SceneManager.LoadScene(endScene);
-        points.AddPoints(109482392);
 
     }
 
