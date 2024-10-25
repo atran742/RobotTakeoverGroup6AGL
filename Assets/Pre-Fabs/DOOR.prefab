@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7888198334508850392}
   - component: {fileID: 381413789972262091}
   - component: {fileID: 2197260262511111962}
-  - component: {fileID: 8031836871493891333}
   m_Layer: 0
   m_Name: DOOR
   m_TagString: Untagged
@@ -78,60 +77,15 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -3.8462844, y: 0}
-  m_ConnectedAnchor: {x: -0.48078555, y: 0}
+  m_ConnectedAnchor: {x: -0.5775738, y: -0.0046803667}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -66.91558
-    m_UpperAngle: 57.02013
---- !u!61 &8031836871493891333
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148027139780131603}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.20896, y: 0.050504684}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.1991854, y: 1.6157112}
-  m_EdgeRadius: 0
+    m_LowerAngle: -85
+    m_UpperAngle: 85
 --- !u!1 &7832335108727496571
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,8 +114,8 @@ Transform:
   m_GameObject: {fileID: 7832335108727496571}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalPosition: {x: 0.3593, y: 0.0352, z: 0}
+  m_LocalScale: {x: 7.281467, y: 7.521211, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7888198334508850392}
@@ -250,7 +204,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00042305887, y: 0.0026168823}
+  m_Offset: {x: 0.091827065, y: 0.0026168823}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -261,7 +215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96384573, y: 0.09272289}
+  m_Size: {x: 0.77934545, y: 0.09272289}
   m_EdgeRadius: 0
 --- !u!50 &1075461465769915271
 Rigidbody2D:
@@ -275,7 +229,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.9
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0

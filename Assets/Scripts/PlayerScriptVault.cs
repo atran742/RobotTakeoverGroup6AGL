@@ -6,32 +6,30 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float moveSpeed = 1f;
-
+    public float movSpeed = 8;
+    Rigidbody2D rb;
     public string sceneName;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void FixedUpdate()
     {
-        Vector2 temp = transform.position;
+        float inputX = Input.GetAxisRaw("Horizontal");
+        float inputY = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetAxis("Horizontal") > 0)
+        Vector2 move = new Vector2 (inputX, inputY);
+        move.Normalize();
+
+        rb.velocity = move * movSpeed;
+        if(move != Vector2.zero)
         {
-            temp.x += moveSpeed * Time.deltaTime;
+            float angle = (float)(Math.Atan2(move.y, move.x) * Mathf.Rad2Deg);
+            transform.rotation = Quaternion.Euler(0, 0, angle);
         }
-        else if (Input.GetAxis("Horizontal") < 0)
-        {
-            temp.x -= moveSpeed *Time.deltaTime;
-        }
-        if (Input.GetAxis("Vertical") > 0)
-        {
-            temp.y += moveSpeed * Time.deltaTime;
-        }
-        else if (Input.GetAxis("Vertical") < 0)
-        {
-            temp.y -= moveSpeed *Time.deltaTime;
-        }
-        
-        transform.position = temp;
     }
 
     void OnTriggerEnter2D(Collider2D target)
@@ -47,15 +45,5 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
