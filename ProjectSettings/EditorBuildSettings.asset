@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay_FINAL_LEVEL.unity
     guid: 6139aa5368cdecc44b68c1b78892daa3
+  - enabled: 1
+    path: Assets/Scenes/Vending Machine Scene.unity
+    guid: 43a4f3bc14ef94b5e8ba446117c93a2c
+  - enabled: 1
+    path: Assets/Scenes/TurnCameraOfflevel.unity
+    guid: 0c85e09bd9945469d9352fe5e33cba50
   m_configObjects: {}
