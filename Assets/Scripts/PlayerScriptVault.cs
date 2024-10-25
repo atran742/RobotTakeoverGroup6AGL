@@ -25,11 +25,6 @@ public class PlayerScript : MonoBehaviour
         move.Normalize();
 
         rb.velocity = move * movSpeed;
-        if(move != Vector2.zero)
-        {
-            float angle = (float)(Math.Atan2(move.y, move.x) * Mathf.Rad2Deg);
-            transform.rotation = Quaternion.Euler(0, 0, angle);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D target)

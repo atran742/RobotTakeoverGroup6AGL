@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3e0ca08d9c344bb8471e06b6a625b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  movSpeed: 2
   sceneName: EndScene
 --- !u!50 &825232550
 Rigidbody2D:
